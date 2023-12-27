@@ -36,4 +36,13 @@ print(s[1:4])
 
 print(s[::-1])
 
+#kolekcja: krotki (tuple)
+miasta = ("Kraków","Lublin","Warszawa","Kielce","Kraków","Toruń","Kraków")
+print(miasta)
+print(type(miasta))
+print(type(imiona))
 
+print(miasta.count("Kraków"))
+print(miasta.index("Toruń"))
+
+print("Lublin" in miasta)
