@@ -21,3 +21,19 @@ print(sorted(imiona))
 print(imiona)
 imiona.sort()
 print(imiona)
+
+imionaparzyste = imiona[::2]
+print(imionaparzyste)
+
+ts = [45,8.8,True,"Romek","77"]
+
+s = "lajkonik"
+print(s)
+
+print(s[0])
+print(s[2])
+print(s[1:4])
+
+print(s[::-1])
+
+
