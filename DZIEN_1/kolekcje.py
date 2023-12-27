@@ -91,3 +91,37 @@ print(kolory)
 
 kolory.discard("biały")
 print(kolory)
+
+#kolekcja:słownik -> dict
+
+osoba = {
+    "imię":"Jan",
+    "nazwisko":"Kowal",
+    "wiek":57,
+    "miasto":"Opole",
+    "miasto urodzenia":"Katowice",
+    333:True,
+    "nazwisko":"Bączek"
+}
+
+print(osoba)
+
+print("_"*60)
+print(f'klucze: {osoba.keys()}')
+for x in osoba:
+    print(x)
+
+print(f'wartości: {osoba.values()}')
+for x in osoba.values():
+    print(x)
+print(f'asocjacja klucz-wartość: {osoba.items()}')
+
+for x,y in osoba.items():
+    print(f"klucz: {x} , wartość: {y}")
+
+osoba["wiek"] = 66
+
+print(osoba)
+
+osoba["samochód"] = "Opel"
+print(osoba)
