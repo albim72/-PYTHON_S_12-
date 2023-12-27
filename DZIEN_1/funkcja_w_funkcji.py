@@ -28,3 +28,28 @@ print(osoba(konkurs,"Olaf",33,"uczestnikiem"))
 print(osoba(bonus,66,10))
 print(osoba(bonus,45,10))
 print(osoba(bonus,12,10))
+
+
+#przykład 2
+
+def rejestracja(oplata):
+    def lista_zawodnikow(nr):
+        return f"jesteś na liście zawodników nr {nr}- opłata wniesiona!"
+
+    def brak():
+        return "brak wpłaty - masz 3 dni na uzupełnienie!"
+
+    def error():
+        return "błąd w rejestracji: 1 - opłacono, 2 - nieopłacono, inna wartość -> błąd!"
+
+    if oplata == 1:
+        return lista_zawodnikow
+    elif oplata == 0:
+        return brak
+    else:
+        return error
+
+
+print(rejestracja(1)(56))
+print(rejestracja(0)())
+print(rejestracja(56)())
