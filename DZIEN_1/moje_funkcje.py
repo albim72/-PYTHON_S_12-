@@ -20,3 +20,9 @@ def gh(x:int,l:int,k:float=3.333)->float:
 print(gh(5,6,4.5))
 print(gh(1.2,False,6))
 print(gh(1.2,False))
+
+def zbior(f1,f2):
+    return f1+f2
+
+print(zbior(gh(5,7,8),policz(1,2,3)))
+
