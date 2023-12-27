@@ -46,3 +46,48 @@ print(miasta.count("Kraków"))
 print(miasta.index("Toruń"))
 
 print("Lublin" in miasta)
+
+#kolekcja: zbiór(set)
+
+kolory = {"zielony","czerwony","biały","niebieski","brązowy","pomarańczowy","biały"}
+
+nb = [5,3,6,2,5,2,6,3,567,32,6,3,6,3]
+nb = list(set(nb))
+print(nb)
+
+a:int=5
+b:float=5
+c=5
+
+print(id(a))
+print(id(b))
+print(id(c))
+a = 8
+print("_"*60)
+print(id(a))
+print(id(b))
+print(id(c))
+print(a is b)
+
+ob = [a,b,c]
+ob = list(set(ob))
+print(ob)
+
+print(kolory)
+print(kolory)
+print(kolory)
+
+kolory.add("żółty")
+print(kolory)
+
+kolory.update(["burgund","szary","złoty"])
+print(kolory)
+
+kolory.remove("szary")
+print(kolory)
+
+kolory.discard("srebrny")
+print(kolory)
+
+kolory.discard("biały")
+print(kolory)
