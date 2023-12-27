@@ -26,3 +26,16 @@ def zbior(f1,f2):
 
 print(zbior(gh(5,7,8),policz(1,2,3)))
 
+
+#przyklad 3
+
+def ranking(*lang,nrrank,**inne):
+    print(f'ranking języków programowania nr {nrrank} -> 1:{lang[0]}, '
+          f'2:{lang[1]}, 3: {lang[2]}')
+
+ranking("Python","Java","C#",nrrank=23)
+ranking("Python","Java","C++","C#","JavaScript",nrrank=88,wersja="1.0")
+
+#CTRL+D - powielenie linii lub bloku tesktu
+#CTRL+/ - komentowanie lub odkomentowanie linii/bloku
+
