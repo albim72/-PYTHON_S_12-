@@ -46,4 +46,14 @@ print(f'rabat: {bk1.rabat(14):.2f} zł')
 bk1.set_oprawa("twarda")
 print(f"oprawa: {bk1.get_oprawa()}")
 
+print("_"*60)
+
+bk2 = Book(67,"Hobbit","J.R.R. Tolkien",40)
+print(bk2)
+bk2("Orion")
+print(f'rabat: {bk2.rabat(14):.2f} zł')
+bk2.set_oprawa("twarda")
+print(f"oprawa: {bk2.get_oprawa()}")
+print(f"cena przed rabatem: {bk2.cena} zł")
+
 
