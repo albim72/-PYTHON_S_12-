@@ -1,5 +1,6 @@
 from oblicz import Obliczenia
 from daty import Dates
+from mtekst import MojTekst
 
 print(f"wartość wynosi: {Obliczenia.moblicz(2,7,5)}")
 
@@ -17,3 +18,8 @@ if (d1==d2):
     print(f"Identyczne daty -> d1 {d1}, d2 {d2}")
 else:
     print(f"Różne daty -> d1 {d1}, d2 {d2}")
+
+mt = MojTekst("dane do pobrania")
+print(mt.msg())
+print(mt.opis("konkretne dane: abc"))
+print(MojTekst.opis("to jest statyczne"))
