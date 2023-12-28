@@ -16,6 +16,8 @@ class Book:
         print(f"wydawnictwo: {wydawnictwo}")
         print(f"kwota do zapłaty: {self.cena - self.rabat(14):.2f} zł")
 
+    __wydawca = "Jan Kot"
+
     def rabat(self,procent):
         return self.cena*(procent/100)
 
@@ -55,5 +57,7 @@ print(f'rabat: {bk2.rabat(14):.2f} zł')
 bk2.set_oprawa("twarda")
 print(f"oprawa: {bk2.get_oprawa()}")
 print(f"cena przed rabatem: {bk2.cena} zł")
+print(f"wydawca: {bk2.__init__(23,'ABC','Jonek')}")
+print(bk2)
 
 
