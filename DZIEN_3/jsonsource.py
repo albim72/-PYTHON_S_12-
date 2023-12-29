@@ -36,3 +36,13 @@ info = '{"organizacja":"Fundacja BIOTECH","miasto":"Zamość","kraj":"Polska"}'
 projekt = {"id":7546,"temat":"Innowacyjne technologie AI","kwota":89762338}
 
 # połącz oba żródła i ostatecznia 'zrzuć' pełne żródło do formatu json, zapisz je w pliku projekt.json
+
+z = json.loads(info)
+z.update(projekt)
+print(z)
+info_new = json.dumps(z,indent=4)
+print(info_new)
+
+with open("projekt.json","w",encoding="utf-8") as f:
+    f.write(info_new)
+
